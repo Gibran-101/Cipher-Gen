@@ -20,6 +20,6 @@ random_symbs = []
 for symbs in range(1, nr_symbols+1):
   random_symbs.append(random.choice(symbols))
   toStringSymbs = ''.join(random_symbs)
-passwordMix = str(toStringLetters + toStringNums + toStringSymbs)
+passwordMix = (toStringLetters + toStringNums + toStringSymbs)
 password = ''.join(random.sample(passwordMix, len(passwordMix)))
 print(f"Your password: {password}")
